@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1080.0" stylesheets="@../registerWindow/css/button.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphic.Login">
+   <children>
+      <Text fx:id="errorText" fill="RED" layoutX="14.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="514.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="logToAccesLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="71.0" layoutY="299.0" prefHeight="35.0" prefWidth="420.0" text="Log to access your account" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="womanImage" fitHeight="549.0" fitWidth="514.0" layoutX="534.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/musicWoman.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nameTextField" layoutX="102.0" layoutY="380.0" prefHeight="57.0" prefWidth="366.0" promptText="name">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordTextField" layoutX="103.0" layoutY="473.0" prefHeight="57.0" prefWidth="366.0" promptText="password">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="registerButton" layoutX="118.0" layoutY="596.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="334.0" style="-fx-background-radius: 20; -fx-background-color: black;" stylesheets="@css/button.css" text="register" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="haveAccountLabel" layoutX="129.0" layoutY="686.0" prefHeight="20.0" prefWidth="194.0" text="Already have an acount?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="toRegisterLabel" layoutX="327.0" layoutY="688.0" text="Sign up" textFill="#fec00f" />
+      <Button fx:id="signUpButton" layoutX="323.0" layoutY="682.0" mnemonicParsing="false" opacity="0.0" prefHeight="30.0" prefWidth="53.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="languageLabel" layoutX="799.0" layoutY="689.0" text="language:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="languageMenuButton" layoutX="872.0" layoutY="689.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="87.0" stylesheets="@css/LanguageMenuButton.css" text="Русский">
+         <items>
+            <MenuItem fx:id="geLanguage" mnemonicParsing="false" style="-fx-text-fill: white;" text="German" />
+            <MenuItem fx:id="enLanguage" mnemonicParsing="false" style="-fx-text-fill: white;" text="English" />
+            <MenuItem fx:id="ruLanguage" mnemonicParsing="false" style="-fx-text-fill: white;" text="Russian" />
+            <MenuItem fx:id="albLanguage" mnemonicParsing="false" style="-fx-text-fill: white;" text="Albanian" />
+         </items>
+      </MenuButton>
+      <Label fx:id="welcomeLabel" layoutX="5.0" layoutY="20.0" prefHeight="287.0" prefWidth="529.0" text="welcome to music band" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="52.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

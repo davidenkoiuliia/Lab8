@@ -1,0 +1,9 @@
+.menu-button  .menu-item {
+    -fx-background-color: #ac6161;
+}
+.menu-button .context-menu {
+    -fx-background-color:  #ac6161;
+}
+.menu-button  .menu-item:focused {
+    -fx-background-color:  #dc8f8f;
+}
